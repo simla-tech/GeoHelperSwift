@@ -36,10 +36,10 @@ public struct LocaleConfiguration {
     ///
     /// Если `Locale.preferredLanguages` не будет содержать доступных языков, то объект не инициализациуется
     public init?() {
-        guard let lang = Locale.preferredLanguages.first else { return nil }
+        guard let lang = Locale.preferredLanguages.first?.split(separator: "-").first?.lowercased() else { return nil }
         self.lang = lang
         if Locale.preferredLanguages.count > 1 {
-            self.fallbackLang = Locale.preferredLanguages[1]
+            self.fallbackLang = Locale.preferredLanguages[1].split(separator: "-").first?.lowercased()
         } else {
             self.fallbackLang = nil
         }

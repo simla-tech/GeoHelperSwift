@@ -18,7 +18,7 @@ public struct City: Decodable, Identifiable {
     public let name: String
 
     /// Тип объекта
-    public let localityType: LocalityType
+    public let localityType: LocalityType?
 
     /// Идентификатор населенного пункта, в состав которого входит данный населенный пункт
     public let parentCityId: City.ID?
