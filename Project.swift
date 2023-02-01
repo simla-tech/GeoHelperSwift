@@ -16,5 +16,6 @@ let project = Project(
             sources: .defaultTestsPath,
             dependencies: [.target(name: .GeoHelper)]
         )
-    ]
+    ],
+    additionalFiles: ["README.MD", "Package.swift", "GeoHelper.podspec"]
 )

@@ -6,20 +6,18 @@ Implementation of the library for the [GeoHelper service](http://geohelper.info)
 
 - iOS 14.0+ / MacOS 10.15+
 - Xcode 14.0+
-- Swift 5.0+
+- Swift 5.7+
 
 ## Features
 
 - [x] Flexible configuration
 - [x] Full coverage of integration tests
 - [x] Support Async / Await syntax
-- [x] Detailed [documentation]() (only Russian localization)
+- [x] Detailed [documentation](https://simla-tech.github.io/GeoHelperSwift/documentation/geohelper)
 
 ## Getting Started
 
-The best way to start using GeoHelper is with the Getting Started guide.
-
-[GeoHelper Docs]() describe how to integrate the framework and contains reference documentation about all components.
+The best way to start using GeoHelper is with the [Getting Started guide](https://simla-tech.github.io/GeoHelperSwift/documentation/geohelper/gettingstarted). It describe how to integrate the framework and contains reference documentation about all components.
 
 ## Installation
 
