@@ -10,7 +10,8 @@ let package = Package(
         .library(name: "Graphene", targets: ["GeoHelper"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire", .upToNextMajor(from: "5.0.0"))
+        .package(url: "https://github.com/Alamofire/Alamofire", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/apple/swift-docc-plugin.git", from: "1.0.0")
     ],
     targets: [
         .target(

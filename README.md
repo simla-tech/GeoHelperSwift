@@ -1,4 +1,4 @@
-# GeoHelper - Apple SDK
+# GeoHelper - Swift SDK
 
 Implementation of the library for the [GeoHelper service](http://geohelper.info) for Apple platforms (iOS / MacOS) 
 
@@ -57,7 +57,7 @@ Once you have your Swift package set up, adding GeoHelper as a dependency is as 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/simla-tech/GeoHelperAppleSDK", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/simla-tech/GeoHelperSwift", .upToNextMajor(from: "1.0.0"))
 ]
 ```
 
