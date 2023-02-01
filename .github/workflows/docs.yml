@@ -28,7 +28,7 @@ jobs:
     - name: Set up Swift
       uses: swift-actions/setup-swift@v1
       with:
-        swift-version: '5.6'
+        swift-version: '5.7'
     - name: Generate Docs
       uses: fwcd/swift-docc-action@v1
       with:
@@ -36,7 +36,7 @@ jobs:
         output: ./public
         transform-for-static-hosting: 'true'
         disable-indexing: 'true'
-        hosting-base-path: geohelper-swift
+        hosting-base-path: GeoHelperSwift
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
