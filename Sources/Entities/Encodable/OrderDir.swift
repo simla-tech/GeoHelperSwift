@@ -10,10 +10,10 @@ import Foundation
 
 /// Направление сортировки
 public enum OrderDir: String, Encodable {
-    
+
     /// По возрастанию
     case asc
-    
+
     /// По убыванию
     case desc
 }
