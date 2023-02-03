@@ -27,7 +27,7 @@ public struct District: Decodable, Identifiable {
     public let localityType: LocalityType?
 
     /// Словарь идентификаторов в системах, откуда получены данные - [code: id]
-    public let externalIds: GeoHelperDictionary<String, String>
+    public let externalIds: GeoHelperDictionary<String, String>?
 
     /// Словарь локализованных имен - [languageIsoCode: localizedName]
     public let localizedNames: GeoHelperDictionary<String, String>
