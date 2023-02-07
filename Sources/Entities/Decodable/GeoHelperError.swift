@@ -15,7 +15,7 @@ public struct GeoHelperError {
     public let message: String
 
     /// Код ошибки
-    public let code: Int
+    public let code: Int?
 
     /// Доплительная информация об ошибке
     public let details: [String]
@@ -32,7 +32,7 @@ extension GeoHelperError: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.message = try container.decode(String.self, forKey: .message)
-        self.code = try container.decode(Int.self, forKey: .code)
+        self.code = try container.decodeIfPresent(Int.self, forKey: .code)
         self.details = try container.decodeIfPresent([String].self, forKey: .details) ?? []
     }
 
@@ -51,7 +51,7 @@ extension GeoHelperError: CustomNSError {
     }
 
     public var errorCode: Int {
-        self.code
+        self.code ?? -999
     }
 
     public var errorUserInfo: [String: Any] {
