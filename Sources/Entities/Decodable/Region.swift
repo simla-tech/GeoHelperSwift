@@ -21,7 +21,7 @@ public struct Region: Decodable, Identifiable {
     public let countryIso: String
 
     /// Словарь кодов региона - [codeName: code]
-    public let codes: GeoHelperDictionary<String, String>
+    public let codes: GeoHelperDictionary<String, String>?
 
     /// Тип объекта
     public let localityType: LocalityType?
