@@ -5,7 +5,6 @@
 //  Created by Ilya Kharlamov on 1/30/23.
 //  Copyright © 2023 DIGITAL RETAIL TECHNOLOGIES, S.L. All rights reserved.
 //
-// swiftlint:disable identifier_name
 
 import Foundation
 
