@@ -4,13 +4,13 @@ import ProjectDescriptionHelpers
 let project = Project(
     name: .GeoHelper,
     targets: [
-        Target(
+        .target(
             name: .GeoHelper,
             dependencies: [
                 .external(name: .Alamofire)
             ]
         ),
-        Target(
+        .target(
             name: .GeoHelperTests,
             product: .unitTests,
             sources: .defaultTestsPath,
