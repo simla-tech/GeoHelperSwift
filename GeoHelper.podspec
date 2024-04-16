@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GeoHelper'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = "Implementation of the library for the GeoHelper service for Apple platforms (iOS / MacOS)"
   s.homepage         = 'https://github.com/simla-tech/GeoHelperSwift'
   s.social_media_url = 'https://www.simla.com'
