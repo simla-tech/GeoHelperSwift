@@ -93,7 +93,7 @@ class GeoHelperTests: XCTestCase {
     func testPhoneData() async throws {
         let response = try await self.geohelper.phoneData(phone: "+79250494763")
         XCTAssertEqual(response.result.providerName, "ПАО \"МегаФон\"")
-        XCTAssertEqual(response.result.phoneParts.countryCode, 7)
+        XCTAssertEqual(response.result.phoneParts.countryCode, "7")
         XCTAssertEqual(response.result.phoneParts.code, "925")
         XCTAssertEqual(response.result.phoneParts.number, "0494763")
     }

@@ -12,7 +12,7 @@ import Foundation
 public struct PhoneParts: Decodable {
 
     /// Код страны
-    public let countryCode: Int
+    public let countryCode: String
 
     /// Код города, региона, мобильного оператора
     public let code: String
