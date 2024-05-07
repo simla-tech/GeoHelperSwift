@@ -13,7 +13,7 @@ let project = Project(
         .target(
             name: .GeoHelperTests,
             product: .unitTests,
-            sources: .defaultTestsPath,
+            sources: .tests,
             dependencies: [.target(name: .GeoHelper)]
         )
     ],
